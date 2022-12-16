@@ -29,22 +29,36 @@ body {
     text-align: center;
     position: relative;
 }
+.para {
+    position: relative;
+}
+.active {
+    background-color: #04AA6D;
+}
 ul {
     position: static;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(61, 61, 61);
 }
 
 li {
     float: left;
 }
 
+.getinput {
+    border: none;
+    background-color: rgb(50,50,50);
+}
+
 #log-in {
     float: right;
+}
+
+#login-form {
+    border: 2px solid rgb(0,0,0);
 }
 
 li a {
@@ -53,8 +67,4 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
 }
