@@ -1,4 +1,15 @@
 # witherbear.github.io
-Simple website. Testing things.
-If you encountred a error, please make a **issue**!
-This website it's make with HTML5, CSS and JavaScript
+My simple website. <br>
+It's build with TypeScript, Sass and HTML5, feel free to modify.
+
+---
+### Building
+Install Node.js <br>
+After, run those commands:
+```
+npm install -g sass
+```
+```
+npm install -g tsc
+```
+Then, just run the **build.sh** or **build.bat** file.
