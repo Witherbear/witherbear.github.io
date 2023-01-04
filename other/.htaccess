@@ -1,2 +1,0 @@
-ErrorDocument 404 /other/404.html
-AddHandler x-httpd-php .html .htm

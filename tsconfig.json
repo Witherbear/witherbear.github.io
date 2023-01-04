@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "sourceMap": false,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "files": [
+      "scripts/index.ts",
+      "scripts/login.ts",
+    ]
+  }

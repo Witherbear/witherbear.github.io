@@ -1,0 +1,125 @@
+body {
+    font-family: Arial;
+	color: black;
+	font-size: 18px;
+	padding:0;
+	margin:0;
+	width:100%;
+	min-height:100%;
+	background-color: grey;
+}
+.button {
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 32px;
+    text-align: center;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    position: absolute;
+}
+.button:hover {
+    background-color: rgb(7, 214, 35);
+    color: rgb(21,21,21);
+}
+.nav-section {
+  z-index: 1;
+  background-color: rgb(50,50,50);
+  overflow: auto;
+  box-sizing: border-box;
+  position: absolute;
+  position: -webkit-absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+.nav-block {
+  background-color: rgb(50,50,50);
+}
+.nav-section li {
+  list-style-type: none;
+  padding: 14px 16px;
+  display: inline;
+}
+nav {
+	float: left;
+}
+li #home {
+ border-bottom: 2px solid red;
+}
+
+li #about {
+  border-bottom: 2px solid green;
+}
+
+li #games {
+  border-bottom: 2px solid blue;
+}
+
+li #anims {
+  border-bottom: 2px solid yellow;
+}
+.main-div {
+	position: relative;
+	top:5%;
+	z-index:0;
+	left:25%;
+	background-color: white;
+	width: 50%;
+	height: 700px;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.text-center {
+    text-align: center;
+}
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.face {
+	background-color: yellow;
+	transform: rotateY(150deg);
+}
+.checked {
+  color: orange;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: white;
+    color: black;
+    bottom: 0;
+}
+footer ul li a {
+    text-decoration: none;
+    color: gray;
+}
+.game-layout {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  background: none;
+  border: 2px gray solid;
+}
+.game-layout:hover, .game-layout:focus, .game-layout:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+a, object {
+    outline: 0;
+}

@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compiler",
+            "command": "tsc && sass styles/index.scss styles/index.css --no-source-map",
+            "type": "shell",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
