@@ -68,6 +68,20 @@ li #anims {
 	width: 50%;
 	height: 700px;
 }
+.main-div-about {
+	position: relative;
+	top:5%;
+	z-index:0;
+	left:25%;
+	background-color: white;
+	width: 50%;
+	height: 950px;
+}
+.main-div-about a {
+  text-decoration: none;
+  color: black;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -75,6 +89,16 @@ a {
 
 .footer-links {
   list-style-type: none;
+}
+
+.gameCard {
+  border-radius: 5px;
+  background: white;
+  border: 3px solid gray;
+  display: inline-block;
+  width: 290px;
+  margin: 10px;
+  padding: 15px 0 18px;
 }
 
 .text-center {

@@ -9,7 +9,6 @@
       "forceConsistentCasingInFileNames": true
     },
     "files": [
-      "scripts/index.ts",
-      "scripts/login.ts",
+      "scripts/index.ts"
     ]
   }
