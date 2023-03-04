@@ -1,12 +1,17 @@
+/* Variables */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial;
-  color: black;
+  font-family: Arial, sans-serif;
+  color: white;
   font-size: 18px;
   padding: 0;
   margin: 0;
   width: 100%;
   min-height: 100%;
-  background-color: grey;
+  background-color: rgb(50, 50, 50);
 }
 
 .button {
@@ -32,6 +37,7 @@ body {
   box-sizing: border-box;
   position: absolute;
   position: -webkit-absolute;
+  border-bottom: 2px solid white;
   top: 0;
   left: 0;
   width: 100%;
@@ -43,28 +49,87 @@ body {
 
 .nav-section li {
   list-style-type: none;
-  padding: 14px 16px;
+  padding: 0px 16px;
   display: inline;
+  text-align: center;
+}
+
+.nav-section li:hover {
+  text-decoration: underline solid white 5px;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nav-section .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-section li:not(:first-child) {
+    display: none;
+  }
+  .nav-section li.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-section.responsive {
+    position: relative;
+  }
+  .nav-section.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-section.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-div {
+    width: 100%;
+  }
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 nav {
   float: left;
-}
-
-li #home {
-  border-bottom: 2px solid red;
-}
-
-li #about {
-  border-bottom: 2px solid green;
-}
-
-li #games {
-  border-bottom: 2px solid blue;
-}
-
-li #anims {
-  border-bottom: 2px solid yellow;
 }
 
 .main-div {
@@ -72,7 +137,6 @@ li #anims {
   top: 5%;
   z-index: 0;
   left: 25%;
-  background-color: white;
   width: 50%;
   height: 700px;
 }
@@ -82,14 +146,12 @@ li #anims {
   top: 5%;
   z-index: 0;
   left: 25%;
-  background-color: white;
   width: 50%;
   height: 950px;
 }
 
 .main-div-about a {
   text-decoration: none;
-  color: black;
 }
 
 a {
@@ -103,8 +165,8 @@ a {
 
 .gameCard {
   border-radius: 5px;
-  background: white;
-  border: 3px solid gray;
+  background: rgb(50, 50, 50);
+  border: 3px solid white;
   display: inline-block;
   width: 290px;
   margin: 10px;
@@ -114,8 +176,8 @@ a {
 
 .toolCard {
   border-radius: 5px;
-  background: white;
-  border: 3px solid gray;
+  background: rgb(50, 50, 50);
+  border: 3px solid white;
   display: inline-block;
   width: 290px;
   margin: 10px;

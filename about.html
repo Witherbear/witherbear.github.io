@@ -8,48 +8,50 @@
     <meta name="theme-color" content="black">
 
     <title>About | Witherbear Website</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<script src="https://kit.fontawesome.com/85d40a25f3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/index.css">
+	<link rel="manifest" href="/app.webmanifest">
+    <link rel="stylesheet" href="/css/index.css">
   </head>
   <body>
-    <script type="text/javascript" src="scripts/index.js"></script>
-    <header>
-		<section class="navigation">
-			<div class="nav-section">
-				<nav>
-					<ul class="nav-block">
-						<li id="home"><a href="/">Home</a></li>
-						<li id="about"><a href="/about.html">About</a></li>
-						<li id="games"><a href="/games.html">Games</a></li>
-						<li id="anims"><a href="/anims.html">Animations</a></li>
-						<li id="tools"><a href="/tools.html">Tools</a></li>
-						<li id="blog"><a href="https://witherbear.wordpress.com">Blog</a></li>
-					</ul>
-				<nav>
+    <script type="text/javascript" src="/js/index.js"></script>
+	  <header>
+			<section class="navigation">
+				<div class="nav-section" id="topnav">
+					<nav>
+						<ul class="nav-block">
+							<li><a href="/"><i class="fa-solid fa-house"></i> Home</li>
+							<li><a href="/about.html"><i class="fa-solid fa-info"></i> About</a></li>
+							<li><a href="/games.html"><i class="fa-solid fa-gamepad"></i> Games</a></li>
+							<li><a href="/anims.html"><i class="fa-solid fa-pencil"></i> Animations</a></li>
+							<li><a href="/tools.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
+							<li><a href="/blog/"><i class="fa-solid fa-book"></i> Blog</a></li>
+							<a href="javascript:void(0);" class="icon" onclick="respNavbar()">&#9776;</a>
+						</ul>
+					<nav>
+				</div>
+			</section>
+	  </header>
+		<div align="center" class="main-div-about">
+			<br> <br> <br>
+			<a href="#about"><h1 id="about">About</h1></a>
+			<p>Hi, i'm Witherbear.</p>
+			<img src="images/witber128.png" alt="Witherbear">
+			<p>I'm a programmer that uses Haxe.</p>
+			<p>I develop simple games with HaxeFlixel.</p>
+			<hr>
+			<a href="#contact"><h1 id="warning">Contact me</h1></a>
+			<p>You can contact me on Discord or send a mail.</p>
+			<p>Discord: Witherbear#</p>
+			<p>Mail: <a href="mailto:witherbear@greenbear.ml">witherbear@greenbear.ml</a></p>
+			<hr>
+			<a href="#socialmedia"><h1 id="socialmedia">Social Media</h1></a>
+			<div style="display: inline; font-size: 50px;  color: black;">
+				<a href="https://github.com/Witherbear"><i class="fa-brands fa-github"></i></a>
+				<a href="https://twitter.com/witherbearofc"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://dev.to/witherbear"><i class="fa-brands fa-dev"></i></a>
+				<a href="https://stackoverflow.com/users/20920818/"><i class="fa-brands fa-stack-overflow"></i></a>
 			</div>
-		</section>
-	</header>
-	<div align="center" class="main-div-about">
-		<br> <br> <br>
-		<a href="#about"><h1 id="about">About</h1></a>
-		<p>Hi, i'm Witherbear.</p>
-		<img src="images/witber128.png" alt="Witherbear">
-		<p>I made this website like a portfolio and a archive for my games and animations.</p>
-		<p>Also, I made a simple blog for changelogs or other things.</p>
-		<hr>
-		<a href="#warning"><h1 id="warning">Warning</h1></a>
-		<i class="fa-solid fa-exclamation" style="font-size: 100px"></i> <br>
-		<p>All games and animations are made only by me.</p> <br>
-		<p>No content was stolen!</p>
-		<hr>
-		<a href="#socialmedia"><h1 id="socialmedia">Social Media</h1></a>
-		<div style="display: inline;">
-			<a href="https://github.com/Witherbear"><i class="fa-brands fa-github" style="font-size: 50px;  color: black;"></i></a>
-			<a href="https://twitter.com/witherbearofc"><i class="fa-brands fa-twitter" style="font-size: 50px;  color: black;"></i></a>
-			<a href="https://dev.to/witherbear"><i class="fa-brands fa-dev" style="font-size: 50px;  color: black;"></i></a>
-			<a href="https://stackoverflow.com/users/20920818/"><i class="fa-brands fa-stack-overflow" style="font-size: 50px;  color: black;"></i></a>
 		</div>
-	</div>
   </body>
 </html>

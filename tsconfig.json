@@ -1,14 +1,19 @@
 {
     "compilerOptions": {
       "module": "commonjs",
+      "jsx": "preserve",
       "noImplicitAny": true,
       "removeComments": true,
+      "esModuleInterop": true,
       "preserveConstEnums": true,
+      "moduleResolution": "node",
+      "outDir": "/js/",
       "sourceMap": false,
-      "strict": true,
+      "strict": false,
       "forceConsistentCasingInFileNames": true
     },
     "files": [
-      "scripts/index.ts"
+      "ts/index.ts",
+      "ts/first-post.tsx",
     ]
   }

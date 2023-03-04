@@ -61,3 +61,12 @@ function checkAlert(evt:any) {
     filterSelection('android');
   }
 }
+
+function myFunction() {
+  var x:any = document.getElementById("topnav");
+  if (x.className === "nav-section") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-section";
+  }
+}

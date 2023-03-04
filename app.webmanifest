@@ -1,0 +1,10 @@
+{
+    "name": "Witherbear Website",
+    "icons": [
+        {
+           "src": "/images/witber128.png",
+           "type": "image/png",
+           "sizes": "128x128"
+        }
+     ]
+}
