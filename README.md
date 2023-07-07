@@ -1,3 +1,3 @@
-# wb.greenbear.ml
+# Witherbear Website
 
-The repository for my website.
+The repository for my website. Hosted on Netlify.
