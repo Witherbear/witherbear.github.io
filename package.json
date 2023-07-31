@@ -1,40 +1,22 @@
 {
-  "name": "witherbear",
-  "version": "1.0.2",
-  "description": "Witherbear website source",
-  "main": "js/index.js",
+  "name": "greenbearml",
+  "version": "1.0.0",
+  "description": "The repository for my website.",
+  "main": "/scripts/main.js",
   "scripts": {
-    "build": "sass sass/index.scss css/index.css",
-    "test": ""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Witherbear/witherbear.github.io.git"
   },
   "keywords": [
-    "website",
-    "react",
-    "sass",
-    "ts"
+    "website"
   ],
   "author": "Witherbear",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Witherbear/witherbear.github.io/issues"
   },
-  "homepage": "https://witherbear.github.io",
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2",
-    "react": "^18.2.0",
-    "typescript": "^4.9.5",
-    "xmlbuilder": "^15.1.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
-    "@babel/preset-typescript": "^7.18.6",
-    "@types/react": "^18.0.28",
-    "tsc": "^2.0.4"
-  }
+  "homepage": "https://github.com/Witherbear/witherbear.github.io#readme"
 }

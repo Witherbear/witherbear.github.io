@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
-    <meta name="theme-color" content="black">
-
-    <title>Home | Witherbear Website</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<script src="https://kit.fontawesome.com/85d40a25f3.js" crossorigin="anonymous"></script>
-	<link rel="manifest" href="/app.webmanifest">
-    <link rel="stylesheet" href="/css/index.css">
-  </head>
-  <body>
-    <script type="text/javascript" src="/js/index.js"></script>
-    <header>
-			<section class="navigation">
-				<div class="nav-section" id="topnav">
-					<nav>
-						<ul class="nav-block">
-							<li><a href="/"><i class="fa-solid fa-house"></i> Home</li>
-							<li><a href="/about.html"><i class="fa-solid fa-info"></i> About</a></li>
-							<li><a href="/games.html"><i class="fa-solid fa-gamepad"></i> Games</a></li>
-							<li><a href="/anims.html"><i class="fa-solid fa-pencil"></i> Animations</a></li>
-							<li><a href="/tools.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
-							<li><a href="/blog/"><i class="fa-solid fa-book"></i> Blog</a></li>
-							<a href="javascript:void(0);" class="icon" onclick="respNavbar()">&#9776;</a>
-						</ul>
-					<nav>
-				</div>
-			</section>
-	  </header>
+	<link rel="stylesheet" href="/styles/main.css">
+
+	<title>Witherbear Website</title>
+</head>
+<body>
+	<div class="flex-container">
 		<div align="center" class="main-div">
-			<br> <br> <br>
-			<h1>Home</h1>
-			<p>Hello, welcome to my website repository.</p>
-			<p>It's very simple, like a portfolio.</p>
-			<p>Here i'm archive my animations and games links. There's a simple blog too.</p> <br>
+			<img src="/images/witherbeartitle.png" class="logo-wb">
+			<p class="text-sc18">Hello! I'm Witherbear, welcome to my website/portfolio!</p>
 		</div>
-  </body>
+	</div>
+	<div class="flex-container">
+		<div class="win-wb">
+			<h2 class="text-center">About</h2>
+			<a class="button" href="/#about">View</a>
+		</div>
+		<!-- <div class="win-wb">
+			<h2 class="text-center">Games</h2>
+			<a class="button">View</a>
+		</div>
+		<div class="win-wb">
+			<h2 class="text-center">Projects</h2>
+			<a class="button">View</a>
+		</div> -->
+	</div>
+	<div class="flex-container">
+		<div align="center" class="main-div">
+			<h1 id="about">About Me</h1>
+			<p>I'm Witherbear, a basic HTML/JS programmer.</p>
+			<img src="/images/witber128.png">
+			<p>Also, I create some games on <a href="https://love2d.org">LÖVE game engine</a> and other game engines.</p>
+			<h2>Logos</h2>
+			<div class="flex-container">
+				<img src="/images/witherbear.png" class="grow-fx">
+				<img src="/images/greenbear-logo.png" class="grow-fx">
+			</div>
+			<h2>Social Media</h2>
+			<div style="display: inline; font-size: 50px;  color: black;">
+				<a href="https://github.com/Witherbear"><i class="fa-brands fa-github grow-fx"></i></a>
+				<a href="https://twitter.com/witherbearofc"><i class="fa-brands fa-twitter grow-fx"></i></a>
+				<a href="https://dev.to/witherbear"><i class="fa-brands fa-dev grow-fx"></i></a>
+				<a href="https://stackoverflow.com/users/20920818/"><i class="fa-brands fa-stack-overflow grow-fx"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="flex-container">
+		<div align="center" class="main-div">
+			<h1 id="games">Games</h1>
+			<div class="flex-container"></div>
+		</div>
+	</div>
+	<div class="flex-container">
+		<footer>
+			<div class="footer">
+				<div>
+					Hosted by <a href="https://pages.github.com">Github Pages</a>
+				</div>
+				<div>
+					"Witherbear"/"Greenbear" logo are properties of <a href="https://witherbear.github.io">Witherbear</a>. "FlashContent" logo are properties of <a href="https://flashcontent.github.io" >FlashContent, Inc.</a>
+				</div> <br>
+				<div>
+					<label for="codebox">Enter the 6 digits code:</label><br>
+					<input type="text" id="codebox" name="codebox" class="textbox">
+					<input name="submit" type="submit" id="submit" onclick="sendCode()">
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</body>
 </html>
