@@ -1,0 +1,229 @@
+/* Variables */
+$font: Arial;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font, sans-serif;
+	color: white;
+	font-size: 18px;
+	padding:0;
+	margin:0;
+	width:100%;
+	min-height:100%;
+	background-color: rgb(50, 50, 50);
+}
+.button {
+  background-color: green;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  transition-duration: 0.4s;
+  font-size: 16px;
+  position: absolute;
+}
+.button:hover {
+  background-color: rgb(7, 214, 35);
+  color: rgb(21,21,21);
+}
+.nav-section {
+  z-index: 1;
+  background-color: rgb(50,50,50);
+  overflow: auto;
+  box-sizing: border-box;
+  position: absolute;
+  position: -webkit-absolute;
+  border-bottom: 2px solid white;
+  top:0;
+  left:0;
+  width:100%;
+}
+.nav-block {
+  background-color: rgb(50,50,50);
+}
+.nav-section li {
+  list-style-type: none;
+  padding: 0px 16px;
+  display: inline;
+  text-align: center;
+}
+.nav-section li:hover {
+  text-decoration: underline solid white 5px;
+}
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nav-section .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-section li:not(:first-child) {display: none;}
+  .nav-section li.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-section.responsive {position: relative;}
+  .nav-section.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-section.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-div {
+    width: 100%;
+  }
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+nav {
+	float: left;
+}
+.main-div {
+	position: relative;
+	top:5%;
+	z-index:0;
+	left:25%;
+	width: 50%;
+	height: 700px;
+}
+.main-div-about {
+	position: relative;
+	top:5%;
+	z-index:0;
+	left:25%;
+	width: 50%;
+	height: 950px;
+}
+.main-div-about a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.gameCard {
+  border-radius: 5px;
+  background: rgb(50, 50, 50);
+  border: 3px solid white;
+  display: inline-block;
+  width: 290px;
+  margin: 10px;
+  padding: 15px 0 18px;
+/*  display: none;*/
+}
+
+.toolCard {
+  border-radius: 5px;
+  background: rgb(50, 50, 50);
+  border: 3px solid white;
+  display: inline-block;
+  width: 290px;
+  margin: 10px;
+  padding: 15px 0 18px;
+/*  display: none;*/
+}
+
+.show {
+  display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.face {
+	background-color: yellow;
+	transform: rotateY(150deg);
+}
+.checked {
+  color: orange;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: white;
+    color: black;
+    bottom: 0;
+}
+footer ul li a {
+    text-decoration: none;
+    color: gray;
+}
+.game-layout {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  background: none;
+  border: 2px gray solid;
+}
+.game-layout:hover, .game-layout:focus, .game-layout:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+a, object {
+    outline: 0;
+}
+.icon {
+  display: none;
+}

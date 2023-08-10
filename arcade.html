@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WBXcade</title>
+	<style type="text/css">
+		html, body {margin: 0; height: 100%; overflow: hidden; background: #0e385d; font-family: sans-serif, Arial;}
+		canvas {
+			background-color: white;
+			position: fixed;
+			left: 37%;
+			top: 6%;
+			border: 2px black solid;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas" width="400" height="580"></canvas>
+	<script>
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+
+		const bird = {
+		  x: 50,
+		  y: canvas.height / 2,
+		  size: 20,
+		  speedY: 0,
+		  gravity: 0.5,
+		  jumpPower: -10,
+		  draw() {
+		    ctx.fillStyle = 'yellow';
+		    ctx.fillRect(this.x, this.y, this.size, this.size);
+		  },
+		  update() {
+		    this.speedY += this.gravity;
+		    this.y += this.speedY;
+		  },
+		  jump() {
+		    this.speedY = this.jumpPower;
+		  }
+		};
+
+		const pipes = [];
+		const pipeGap = 100;
+		const pipeWidth = 50;
+		let score = 0;
+
+		function spawnPipe() {
+		  const height = Math.random() * (canvas.height - pipeGap * 2) + pipeGap;
+		  pipes.push({
+		    x: canvas.width,
+		    y: 0,
+		    height: height
+		  });
+		  pipes.push({
+		    x: canvas.width,
+		    y: height + pipeGap,
+		    height: canvas.height - height - pipeGap
+		  });
+		}
+
+		function drawPipes() {
+		  ctx.fillStyle = 'green';
+		  for (const pipe of pipes) {
+		    ctx.fillRect(pipe.x, pipe.y, pipeWidth, pipe.height);
+		  }
+		}
+
+		function updatePipes() {
+		  for (const pipe of pipes) {
+		    pipe.x -= 2;
+		    if (pipe.x + pipeWidth < 0) {
+		      pipes.splice(pipes.indexOf(pipe), 1);
+		    }
+
+		    // Check for collision
+		    if (bird.x + bird.size > pipe.x && bird.x < pipe.x + pipeWidth) {
+		      if (bird.y < pipe.y || bird.y + bird.size > pipe.y + pipe.height) {
+		        resetGame();
+		        return;
+		      }
+		    }
+		  }
+		}
+
+		function resetGame() {
+		  pipes.length = 0;
+		  bird.y = canvas.height / 2;
+		  bird.speedY = 0;
+		  score = 0;
+		}
+
+		function drawScore() {
+		  ctx.fillStyle = 'black';
+		  ctx.font = '24px Arial';
+		  ctx.fillText(`Score: ${score}`, 10, 30);
+		}
+	</script>
+</body>
+</html>
